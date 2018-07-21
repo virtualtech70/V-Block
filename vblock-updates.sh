@@ -3,4 +3,6 @@
 
 cd /home/pi/bin/logs
 
+echo here
+
 exit 0
