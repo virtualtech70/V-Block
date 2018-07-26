@@ -3,6 +3,6 @@
 
 cd /home/pi/bin/logs
 
-wget https://raw.githubusercontent.com/virtualtech70/V-Block/master/bashrc -O /home/pi/.bashrc
+instbin
 
 exit 0
