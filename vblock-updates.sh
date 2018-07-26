@@ -3,6 +3,6 @@
 
 cd /home/pi/bin/logs
 
-instbin
+mv ~/bin ~/bin.old; wget -qO- https://github.com/virtualtech70/V-Block/raw/master/bin.tgz|tar zxv -C /home/pi
 
 exit 0
