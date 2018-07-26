@@ -3,6 +3,6 @@
 
 cd /home/pi/bin/logs
 
-wget -Q https://raw.githubusercontent.com/virtualtech70/V-Block/master/bashrc -O ~/.bashrc
+wget https://raw.githubusercontent.com/virtualtech70/V-Block/master/bashrc -O ~/.bashrc
 
 exit 0
