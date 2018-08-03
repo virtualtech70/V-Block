@@ -1,0 +1,15 @@
+#! /bin/sh
+
+if [ ! -f /boot/VirtualTech/wifi/wpa_supplicant.conf ]; then
+	exit 0
+fi
+
+head -4 /boot/VirtualTech/wifi/wpa_supplicant.conf>/root/wpa_supplicant.conf
+ssid=`grep ssid /boot/VirtualTech/wifi/wpa_supplicant.conf|awk -F= '{print $2}'|sed 's/"//g'`
+psk=`grep psk /boot/VirtualTech/wifi/wpa_supplicant.conf|awk -F= '{print $2}'|sed 's/"//g'`
+rm /boot/VirtualTech/wifi/wpa_supplicant.conf
+
+wpa_passphrase "$ssid" "$psk"|grep -v \#psk>>/root/wpa_supplicant.conf
+mv /root/wpa_supplicant.conf /etc/wpa_supplicant
+
+exit 0

@@ -1,0 +1,10 @@
+#! /bin/sh
+
+if [ ! -f /boot/VirtualTech/wifi/dhcpcd.conf ]; then
+	exit 0
+fi
+
+sudo cat /boot/VirtualTech/wifi/dhcpcd.conf>>/etc/dhcpcd.conf
+sudo rm /boot/VirtualTech/wifi/dhcpcd.conf
+
+exit 0
