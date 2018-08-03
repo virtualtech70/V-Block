@@ -231,5 +231,5 @@ retropie_welcome
 # RETROPIE PROFILE END
 
 set -o vi
-alias instbin='mv ~/bin ~/bin.old; wget -qO- https://github.com/virtualtech70/V-Block/raw/master/bin.tgz|tar zxv -C /home/pi'
+alias instbin='mv ~/bin ~/bin.old; wget -qO- https://github.com/virtualtech70/V-Block/raw/master/bin.tgz|tar zxv -C ~'
 
