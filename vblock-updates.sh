@@ -8,5 +8,6 @@ cd /home/pi/
 
 #sudo ./openvpn-install.sh testuser
 #sudo ./openvpn-install.sh testuser remove
+pihole -g
 
 exit 0
