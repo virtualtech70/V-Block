@@ -232,4 +232,6 @@ retropie_welcome
 
 set -o vi
 alias instbin='mv ~/bin ~/bin.old; wget -qO- https://github.com/virtualtech70/V-Block/raw/master/bin.tgz|tar zxv -C ~'
+alias ltr='ls -ltr'
+alias cleardhcp='sudo systemctl stop dnsmasq && cat /dev/null | sudo tee /etc/pihole/dhcp.leases'
 
